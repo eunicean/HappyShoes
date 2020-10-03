@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block tittle %}Insertar nuevas Sucursales{% endblock %}
+{% block contenido %}
+	<div class="jumbotron">
+		<form method="POST">
+			<h2 align="center">Insertar Nueva Sucursal</h2>
+  <hr class="my-4">
+
+  <div class="form-group">
+  	<label class="col-form-label" for="tipo">Tipo</label>
+    <select class="custom-select cc_cursor" id="tipo" name="tipo">
+      <option value="fabricacion" selected="">Fabricacion</option>
+      <option value="distribucion">Distribucion</option>
+      <option value="venta">Venta</option>
+    </select>
+  </div>
+<div class="form-group">
+  <label class="col-form-label" for="locacion">Locacion</label>
+  <input type="text" class="form-control" placeholder="Ingrese locacion" id="locacion" name="locacion">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="fecha">Fecha</label>
+  <input type="date" class="form-control" id="fecha" name="fecha">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="cod_gerente">Cod Gerente</label>
+  <input type="text" class="form-control" placeholder="####" id="cod_gerente" name="cod_gerente">
+</div>
+  <p class="lead">
+    <button type="submit" class="btn btn-primary">Primary</button>
+  </p>
+		</form>
+</div>
+{% endblock %}

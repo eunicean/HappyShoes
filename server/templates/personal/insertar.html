@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block tittle %}Insertar nuevas Sucursales{% endblock %}
+{% block contenido %}
+	<div class="jumbotron">
+		<form method="POST">
+			<h2 align="center">Insertar Nuevo Empleado</h2>
+  <hr class="my-4">
+
+  <div class="form-group">
+  	<label class="col-form-label" for="tipo">Tipo</label>
+    <select class="custom-select cc_cursor" id="tipo" name="tipo">
+      <option value="administrador" selected="">Administrador</option>
+      <option value="Operario">Operario</option>
+      <option value="gerente">Gerente</option>
+    </select>
+  </div>
+<div class="form-group">
+  <label class="col-form-label" for="dpi">DPI</label>
+  <input type="text" class="form-control" placeholder="Ingrese DPI ###" id="dpi" name="dpi">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="seg_social">Seguro Social</label>
+  <input type="text" class="form-control" placeholder="Ingrese No. ####" id="seg_social" name="seg_social">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="nombre">Nombre</label>
+  <input type="text" class="form-control" placeholder="Ingrese nombre" id="nombre" name="nombre">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="apellido">Apellido</label>
+  <input type="text" class="form-control" placeholder="Ingrese los dos apellidos" id="apellido" name="apellido">
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="cod_gerente">Cantidad de Horas contratadas</label>
+  <input type="text" class="form-control" placeholder="####" id="cod_gerente" name="cod_gerente">
+</div>
+  <p class="lead">
+    <button type="submit" class="btn btn-primary">Primary</button>
+  </p>
+		</form>
+</div>
+{% endblock %}
